@@ -12,14 +12,14 @@
 }
 
 .postCardList {
-  position: inherit;
+  /* position: inherit; */
   right: 50px;
   padding-left: 300px;
   padding-top: 75px;
 }
 
 .profilePageCard {
-  position: absolute;
+  /* position: absolute; */
   margin-left: 15%;
   margin-top: 5%;
 }
@@ -35,7 +35,7 @@
     display: inline-block;
   }
   .postCardList {
-    position: absolute;
+    /* position: absolute; */
     padding-left: 50px;
     right: 15px;
   }
