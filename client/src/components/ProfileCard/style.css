@@ -1,0 +1,27 @@
+.profileCard {
+  background: #4054F5;
+  color: black;
+  min-width: 250px;
+  max-width: 250px;
+}
+.card {
+  background-color: none !important;
+}
+#logo {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+#profilePic {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
