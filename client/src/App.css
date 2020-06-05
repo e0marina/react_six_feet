@@ -8,20 +8,21 @@
   );
   min-height: 500vh;
 
-  /* display: flex; */
+  display: flex;
 }
 
 .postCardList {
-  /* position: inherit; */
+  position: inherit;
   right: 50px;
   padding-left: 300px;
   padding-top: 75px;
 }
 
 .profilePageCard {
-  position: absolute;
+  position: relative;
   margin-left: 15%;
   margin-top: 5%;
+  padding-top: 10px;
 }
 
 @media (max-width: 768px) {
