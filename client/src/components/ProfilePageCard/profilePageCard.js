@@ -17,7 +17,7 @@ const ProfilePageCard = (props) => {
           <Figure>
             <Container>
               <Row>
-                <Col>
+                <Col style={{ width: "70%" }}>
                   <ProfileDialog />
                   <UserProfile />
                   <p className="aboutMePlaceholder" style={{ color: "white" }}>
