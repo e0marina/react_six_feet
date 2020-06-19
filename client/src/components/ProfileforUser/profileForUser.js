@@ -1,27 +1,28 @@
 import React, { Component, Fragment } from "react";
 import axios from "axios";
+import ProfileDialog from "../ProfilePopUp/profileDialog.js";
 
 class UserProfile extends Component {
   state = {
     user: {
-      userId: "",
-      userhandle: "your unique id",
-      bio: "your bio",
-      website: "your website",
-      hobbies: "your hobbies",
+      userId: localStorage.getItem("userId"),
+      userhandle: "",
+      bio: "",
+      website: "",
+      hobbies: "",
       imageId: "",
     },
   };
 
   componentDidMount() {
-    console.log("hi");
+    // console.log("hi");
 
     axios
-      .get("/userprofile")
+      .get("/userprofile/" + this.state.user.userId)
       .then((res) => {
-        console.log(res);
+        console.log("res", res);
         if (res.data == null) {
-          console.log("ok!");
+          console.log("data is null!");
         } else {
           this.setState({ user: res.data });
         }
@@ -29,9 +30,21 @@ class UserProfile extends Component {
       .catch((err) => console.log(err));
   }
 
+  changeUserState = (e) => {
+    this.setState({
+      user: { ...this.state.user, [e.target.name]: e.target.value },
+    });
+  };
+
   render() {
+    console.log(this.state);
+
     return (
       <Fragment>
+        <ProfileDialog
+          user={this.state.user}
+          changeUserState={this.changeUserState}
+        />
         <br></br>
         <br></br>
         <div style={{ textAlign: "center" }}>

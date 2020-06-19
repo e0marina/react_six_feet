@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Figure from "react-bootstrap/Figure";
 import { Row, Col, Container } from "react-bootstrap";
 import ProfilePic from "../assets/profilepic.jpeg";
-import ProfileDialog from "../../components/ProfilePopUp/profileDialog";
+
 import UserProfile from "../ProfileforUser/profileForUser";
 
 const ProfilePageCard = (props) => {
@@ -18,7 +18,6 @@ const ProfilePageCard = (props) => {
             <Container>
               <Row>
                 <Col style={{ width: "70%" }}>
-                  <ProfileDialog />
                   <UserProfile />
                   <p className="aboutMePlaceholder" style={{ color: "white" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -30,18 +29,6 @@ const ProfilePageCard = (props) => {
                     massa sed elementum tempus. Accumsan sit amet nulla facilisi
                     morbi tempus.
                   </p>
-                  {/* <div className="userInfoContainer">
-										
-										<h3
-											style={{ textAlign: 'center', marginTop: '2rem' }}
-											className="userNamePlaceholder"
-										>
-											Jane Doe
-										</h3>
-										<br />
-										<h6>About Me:</h6>
-										
-									</div> */}
                 </Col>
               </Row>
             </Container>

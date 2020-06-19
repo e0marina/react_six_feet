@@ -84,9 +84,7 @@ class ProfileDialog extends Component {
   handleClose = () => {
     this.setState({ open: false });
   };
-  handleChange = (event) => {
-    this.setState({ [event.target.name]: event.target.value });
-  };
+
   handleSubmit = (event) => {
     event.preventDefault();
 
@@ -111,6 +109,8 @@ class ProfileDialog extends Component {
   };
 
   render() {
+    console.log(this.props);
+
     const { classes } = this.props;
     return (
       <Fragment>
@@ -142,13 +142,14 @@ class ProfileDialog extends Component {
             <form onSubmit={this.handleSubmit}>
               <TextField
                 name="userhandle"
+                value={this.props.user.userhandle}
                 type="text"
                 label="userhandle"
                 multiline
                 rows="3"
                 placeholder="What is your username?"
                 className="textField"
-                onChange={this.handleChange}
+                onChange={this.props.changeUserState}
                 fullWidth
               />
               <TextField
