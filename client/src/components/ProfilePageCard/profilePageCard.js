@@ -31,14 +31,7 @@ const ProfilePageCard = (props) => {
                     morbi tempus.
                   </p>
                   {/* <div className="userInfoContainer">
-										<div className="profilePicPlaceholder">
-											<Card.Img
-												className="center"
-												id="profilePic"
-												variant="center"
-												src={ProfilePic}
-											/>
-										</div>
+										
 										<h3
 											style={{ textAlign: 'center', marginTop: '2rem' }}
 											className="userNamePlaceholder"

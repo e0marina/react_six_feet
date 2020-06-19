@@ -17,14 +17,14 @@ router.get("/userprofile/:id", (req, res) => {
 
 router.post("/userprofile", (req, res) => {
   console.log(req.body);
-  // const userId = userId;
+  const userId = req.body.userId;
   const userhandle = req.body.userhandle;
   const bio = req.body.bio;
   const website = req.body.website;
   const hobbies = req.body.hobbies;
   const imageId = req.body.imageId;
   const newUser = new User({
-    // userId,
+    userId,
     userhandle,
     bio,
     website,

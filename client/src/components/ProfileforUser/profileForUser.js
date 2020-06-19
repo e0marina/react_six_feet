@@ -9,16 +9,15 @@ class UserProfile extends Component {
       bio: "your bio",
       website: "your website",
       hobbies: "your hobbies",
-      imageId: "your profile image",
+      imageId: "",
     },
   };
 
   componentDidMount() {
-    const user = window.localStorage.getItem("userId"); //grabs the userId, string of letters and numbers
-    // console.log(user);
+    console.log("hi");
 
     axios
-      .get("/userprofile/" + user)
+      .get("/userprofile")
       .then((res) => {
         console.log(res);
         if (res.data == null) {
@@ -33,9 +32,6 @@ class UserProfile extends Component {
   render() {
     return (
       <Fragment>
-        {/* <h1>
-          user ID: <strong>{this.state.user.userId}</strong>
-        </h1> */}
         <br></br>
         <br></br>
         <div style={{ textAlign: "center" }}>
@@ -43,7 +39,7 @@ class UserProfile extends Component {
 
           <br></br>
           <div style={{ color: "#685380" }}>
-            <image src={this.state.user.imageId}></image>
+            <img src={this.state.user.imageId}></img>
             <br></br>
             <h4>bio: {this.state.user.bio}</h4>
             <br></br>
