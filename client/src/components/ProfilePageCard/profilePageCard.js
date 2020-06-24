@@ -3,8 +3,6 @@ import "./profilePageCard.css";
 import Card from "react-bootstrap/Card";
 import Figure from "react-bootstrap/Figure";
 import { Row, Col, Container } from "react-bootstrap";
-import ProfilePic from "../assets/profilepic.jpeg";
-
 import UserProfile from "../ProfileforUser/profileForUser";
 
 const ProfilePageCard = (props) => {
