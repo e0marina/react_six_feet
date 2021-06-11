@@ -25,3 +25,5 @@ Axios
 
 Here's a link to a presentation on the project: https://docs.google.com/presentation/d/1aOKCeaqCVc6YtPYPP2zKwCQ7d01YAfUrCGNJ76wd5oE/edit?usp=sharing
 
+Deployed project: https://react-6-feet.herokuapp.com/
+
